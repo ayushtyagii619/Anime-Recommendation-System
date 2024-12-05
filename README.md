@@ -66,12 +66,11 @@ POST /auth/register
       }
 ```
 ## Response:
-   ```json
+```json
    {
        "MSG": "User registration complete."
    }
 ```
-
 ## Login
    ```json
    URL: POST /auth/login
@@ -94,19 +93,19 @@ POST /auth/register
     "msg": "login successful"
 }
 ```
-Anime Search
-URL: GET /anime/search
-Query Parameters:
+## Anime Search
+## URL: 
+GET /anime/search
+## Query Parameters:
 
-name (optional): Search anime by name.
-genre (optional): Filter anime by genre.
-Example Request:
+- name (optional): Search anime by name.
+- genre (optional): Filter anime by genre.
+## Example Request:
 GET /anime/search?name=Naruto
 
-Response:
+## Response:
 
-json
-Copy code
+```json
 [
     {
         "id": 123,
@@ -117,50 +116,50 @@ Copy code
         "genres": ["Action", "Adventure"]
     }
 ]
-User Preferences
-Get Preferences
-URL: GET /user/preferences
-Headers:
+```
+## User Preferences
+## Get Preferences
+## URL: 
+GET /user/preferences
+## Headers:
 
-Authorization: Bearer access_token
-Response:
-
-json
-Copy code
+## Authorization: Bearer access_token
+## Response:
+```json
 {
     "favorite_genres": "Action,Adventure",
     "watched_anime": "123,456"
 }
-Set Preferences
-URL: POST /user/preferences
-Headers:
-
-Authorization: Bearer access_token
-Request Body:
-
-json
-Copy code
+```
+## Set Preferences
+## URL: 
+POST /user/preferences
+## Headers:
+## Authorization: Bearer access_token
+## Request Body:
+```json
 {
     "favorite_genres": "Comedy,Drama",
     "watched_anime": "789,1011"
 }
-Response:
+```
+## Response:
 
-json
-Copy code
+```json
 {
     "favorite_genres": "Comedy,Drama",
     "watched_anime": "789,1011"
 }
-Anime Recommendations
-URL: GET /anime/recommendations
-Headers:
+```
+## Anime Recommendations
+## URL: 
+GET /anime/recommendations
+## Headers:
 
-Authorization: Bearer access_token
-Response:
+## Authorization: Bearer access_token
+## Response:
 
-json
-Copy code
+```json
 [
     {
         "id": 567,
@@ -171,26 +170,22 @@ Copy code
         "genres": ["Action", "Adventure"]
     }
 ]
-Sample .env File
-env
-Copy code
-SECRET_KEY=your_secret_key
-DATABASE_NAME=anime_recommendation
-DATABASE_USER=your_database_user
-DATABASE_PASSWORD=your_database_password
-DATABASE_HOST=127.0.0.1
-DATABASE_PORT=5432
-Dependencies
-Install all dependencies using the command:
+```
+## Dependencies
+## Install all dependencies using the command:
 
-bash
-Copy code
+```bash
 pip install -r requirements.txt
-License
-This project is licensed under the MIT License. Feel free to contribute and use it as you like!
+```
 
-Contact
+# Contact
 For queries, feel free to reach out:
 
-Email: your-email@example.com
-GitHub: your-username
+# Email:
+```bash
+ayush952877@gmail.com
+```
+# GitHub: 
+```bash
+ayushtyagii619
+```
