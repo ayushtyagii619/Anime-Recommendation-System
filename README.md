@@ -53,7 +53,7 @@ Ensure you have the following installed:
 ### Endpoints
 ### Authentication
 1. Register
-# URL: POST /auth/register
+### URL: POST /auth/register
 
 Request Body:
    ```json
@@ -63,6 +63,7 @@ Request Body:
        "password": "yourpassword",
        "password2": "yourpassword"
    }
+
 Response:
    ```json
    {
