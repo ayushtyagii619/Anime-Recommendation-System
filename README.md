@@ -57,6 +57,7 @@ Ensure you have the following installed:
 POST /auth/register
 
 Request Body:
+   ```bash
    {
        "email": "user@example.com",
        "name": "John Doe",
@@ -65,6 +66,7 @@ Request Body:
    }
 
 Response:
+   ```bash
    {
        "MSG": "User registration complete."
    }
