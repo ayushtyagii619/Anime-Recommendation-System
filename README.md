@@ -64,17 +64,18 @@ POST /auth/register
        "password": "yourpassword",
        "password2": "yourpassword"
       }
-
+```
 Response:
-   ```bash
+   ```json
    {
        "MSG": "User registration complete."
    }
+```
 
 3. Login
-   ```bash
+   ```json
    URL: POST /auth/login
-
+```
 4. Request Body:
    ```json
    {
