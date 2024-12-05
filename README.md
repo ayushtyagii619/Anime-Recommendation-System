@@ -57,7 +57,6 @@ Ensure you have the following installed:
 POST /auth/register
 
 Request Body:
-   ```json
    {
        "email": "user@example.com",
        "name": "John Doe",
