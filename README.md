@@ -66,7 +66,6 @@ Request Body:
    }
 
 Response:
-   ```json
    {
        "MSG": "User registration complete."
    }
