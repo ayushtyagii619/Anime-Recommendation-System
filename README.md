@@ -53,10 +53,10 @@ Ensure you have the following installed:
 ### Endpoints
 ### Authentication
 1. Register
-### URL: 
+### URL
 POST /auth/register
 
-Request Body:
+## Request Body:
 ```bash
 {
        "email": "user@example.com",
@@ -64,7 +64,8 @@ Request Body:
        "password": "yourpassword",
        "password2": "yourpassword"
 }
-2. Response:
+
+Response:
    ```bash
    {
        "MSG": "User registration complete."
