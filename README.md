@@ -57,20 +57,20 @@ Ensure you have the following installed:
 POST /auth/register
 
 Request Body:
-   ```bash
-   {
+```bash
+{
        "email": "user@example.com",
        "name": "John Doe",
        "password": "yourpassword",
        "password2": "yourpassword"
-   }
-
-Response:
+}
+2. Response:
    ```bash
    {
        "MSG": "User registration complete."
    }
 3. Login
+   ```bash
    URL: POST /auth/login
 
 4. Request Body:
