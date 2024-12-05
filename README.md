@@ -57,7 +57,7 @@ Ensure you have the following installed:
 POST /auth/register
 
 ## Request Body:
-```bash
+```json
       {
        "email": "user@example.com",
        "name": "John Doe",
