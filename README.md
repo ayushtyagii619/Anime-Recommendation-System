@@ -62,13 +62,12 @@ Request Body:
        "password": "yourpassword",
        "password2": "yourpassword"
    }
-
 2. Response:
    ```json
    {
        "MSG": "User registration complete."
    }
-3 Login
+3. Login
    URL: POST /auth/login
 
 4. Request Body:
