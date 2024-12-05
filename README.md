@@ -23,3 +23,8 @@ Ensure you have the following installed:
    ```bash
    git clone https://github.com/your-username/anime-recommendation-api.git
    cd anime-recommendation-api
+
+
+2. Create a virtual environment and activate it:
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
