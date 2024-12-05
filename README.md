@@ -58,15 +58,15 @@ POST /auth/register
 
 ## Request Body:
 ```bash
-{
+      {
        "email": "user@example.com",
        "name": "John Doe",
        "password": "yourpassword",
        "password2": "yourpassword"
-}
+      }
 
-## Response:
-   ``bash
+Response:
+   ```bash
    {
        "MSG": "User registration complete."
    }
