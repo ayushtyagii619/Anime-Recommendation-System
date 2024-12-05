@@ -31,60 +31,52 @@ Ensure you have the following installed:
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 3. Install dependencies:
 
-bash
-Copy code
-pip install -r requirements.txt
-Set up your environment variables: Create a .env file in the project root and configure the following:
+   ```bash
+   pip install -r requirements.txt
+4. Set up your environment variables: Create a .env file in the project root and configure the following:
 
-env
-Copy code
-SECRET_KEY=your_secret_key
-DATABASE_NAME=your_database_name
-DATABASE_USER=your_database_user
-DATABASE_PASSWORD=your_database_password
-DATABASE_HOST=127.0.0.1
-DATABASE_PORT=5432
-Apply migrations:
+   ```env
+   SECRET_KEY=your_secret_key
+   DATABASE_NAME=your_database_name
+   DATABASE_USER=your_database_user
+   DATABASE_PASSWORD=your_database_password
+   DATABASE_HOST=127.0.0.1
+   DATABASE_PORT=5432
+5. Apply migrations:
 
-bash
-Copy code
-python manage.py migrate
-Run the development server:
+   ```bash
+   python manage.py migrate
+6. Run the development server:
 
-bash
-Copy code
-python manage.py runserver
-Endpoints
-Authentication
-Register
-URL: POST /auth/register
+   ```bash
+   python manage.py runserver
+### Endpoints
+### Authentication
+1. Register
+# URL: POST /auth/register
 Request Body:
+   ```json
+   {
+       "email": "user@example.com",
+       "name": "John Doe",
+       "password": "yourpassword",
+       "password2": "yourpassword"
+   }
 
-json
-Copy code
-{
-    "email": "user@example.com",
-    "name": "John Doe",
-    "password": "yourpassword",
-    "password2": "yourpassword"
-}
-Response:
+2. Response:
+   ```json
+   {
+       "MSG": "User registration complete."
+   }
+3 Login
+   URL: POST /auth/login
 
-json
-Copy code
-{
-    "MSG": "User registration complete."
-}
-Login
-URL: POST /auth/login
-Request Body:
-
-json
-Copy code
-{
-    "email": "user@example.com",
-    "password": "yourpassword"
-}
+4. Request Body:
+   ```json
+   {
+       "email": "user@example.com",
+       "password": "yourpassword"
+   }
 Response:
 
 json
