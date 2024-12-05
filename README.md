@@ -54,6 +54,7 @@ Ensure you have the following installed:
 ### Authentication
 1. Register
 # URL: POST /auth/register
+
 Request Body:
    ```json
    {
@@ -62,7 +63,7 @@ Request Body:
        "password": "yourpassword",
        "password2": "yourpassword"
    }
-2. Response:
+Response:
    ```json
    {
        "MSG": "User registration complete."
