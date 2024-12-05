@@ -65,27 +65,27 @@ POST /auth/register
        "password2": "yourpassword"
       }
 ```
-Response:
+## Response:
    ```json
    {
        "MSG": "User registration complete."
    }
 ```
 
-3. Login
+## Login
    ```json
    URL: POST /auth/login
 ```
-4. Request Body:
+## Request Body:
    ```json
    {
        "email": "user@example.com",
        "password": "yourpassword"
    }
-Response:
+```
+## Response:
 
-json
-Copy code
+```json
 {
     "token": {
         "refresh": "refresh_token",
@@ -93,6 +93,7 @@ Copy code
     },
     "msg": "login successful"
 }
+```
 Anime Search
 URL: GET /anime/search
 Query Parameters:
